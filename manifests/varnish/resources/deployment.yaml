@@ -28,6 +28,7 @@ spec:
           requests:
             cpu: 250m
             memory: 1.5Gi
+            ephemeral-storage: 100Mi
       securityContext:
         runAsUser: 0
       volumes:
