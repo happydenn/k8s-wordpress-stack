@@ -26,8 +26,8 @@ spec:
           subPath: nginx.conf
         resources:
           requests:
-            cpu: 250m
-            memory: 0.5Gi
+            cpu: 50m
+            memory: 256Mi
       - name: php
         image: gcr.io/hpd-io/docker-wordpress-php:7010eea3507911656367e1f511846e899bfa23c6
         ports:
@@ -40,8 +40,8 @@ spec:
           subPath: fpm.conf
         resources:
           requests:
-            cpu: 750m
-            memory: 1Gi
+            cpu: 700m
+            memory: 768Mi
       volumes:
       - name: wordpress-data
         persistentVolumeClaim:
